@@ -52,3 +52,11 @@
   F. Output is true. This is because Boolean(2) converts to true.
  
 15. The difference is that === returns false strictly if two sides are not the same type, while == will convert the types first.
+
+17. The result is that the array [1, 2, 3] will become [2, 4, 6]. This is because doSomething(num) takes in an integer and multiplies it by 2. It is being passed into modifyArray and will be executed on every entry of the array, hence multiplying every entry of [1, 2, 3] by 2.
+
+19. The output is:\
+1\
+4\
+3\
+2
